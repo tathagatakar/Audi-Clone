@@ -5,9 +5,16 @@
 body{
     font-family: 'Ubuntu', sans-serif;
 }
-header{
-    position: relative;
+*{
+    box-sizing: border-box
 }
+
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
 .logo{
     display: flex;
     overflow: auto;
@@ -15,15 +22,15 @@ header{
     align-items:stretch;
     justify-content: center;
     flex-direction: row;
-    position: sticky;
-    height: 70px;
     background-color: white;
+}
+.logo img{
+    width: 18%;
 }
 .firstnav{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .firstnav li{
     list-style: none;
@@ -39,60 +46,52 @@ header{
 }
 
 .navigation{
-    margin-top: 20px;;
+    margin-top: 20px;
     display:flex;
     height: 50px;
     align-items: center;
     justify-content: center;
     overflow: auto;
+    background-color: rgba(0,0,0,0.8);
 }
 .navigation li{
     list-style: none;
 }
 .navigation:hover{
-    background-color: rgba(0,0,0,0.2);
     font-weight: bold;
     border-bottom: 1px solid oldlace;
     border-top: 1px solid oldlace;
 }
 .navigation li a{
-    color: rgb(0, 0, 0);
+    color: aliceblue;
     text-decoration: none;
-    padding: 0px 10px;
+    padding: 10px 10px;
 }
 .navigation li a:hover{
     font-weight: bold;
     text-decoration: underline;
 }
-
+.firstpic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.firstpic img{
+    padding: 5px;
+}
 header::before{
     background: url("https://wallpaperaccess.com/full/13662.jpg") no-repeat center center/cover;
     content: "";
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
+    width: 100%;
+    
+    right:0;
+    top:50%;
     z-index: -1;
     opacity: 0.8;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    overflow: auto;
-    height: 380px;
-}
-section p{
-    text-align: center;
-}
-section h1{
-    text-decoration: underline;
-}
 
 .middle{
     display: flex;
@@ -100,73 +99,120 @@ section h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("https://images.unsplash.com/photo-1543171165-6ec6ede147ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=952&q=80");
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
     color:white;
+    position: relative;
+    width:100%;
 }
 .repair{
-    /* border: 2px solid red; */
     margin: 10px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 5px 140px;
     }
 .repair img{
-    width: 500px;
+    width: 40%;
     padding: 7px;
     margin: 20px;
 }
-.repair h2{
+#heading h2{
     font-size: 2.0rem;
+    font-weight: 400;
+}
+.repair p{
+    font-size: 1.4rem;
+    font-weight: 250;
+    text-align: center;
+}
+.middle::before{
+    background: url("https://images.unsplash.com/photo-1543171165-6ec6ede147ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=952&q=80") no-repeat center center/cover;
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+.sticky{
+    position: sticky;
+    top:0;
+    z-index: 99;
+}
+.socialmedia{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.8);
+}
+.socialmedia li{
+    list-style: none;
+}
+.socialmedia li i{
+    margin: 20px;
+    color: aliceblue;
+    font-size: 30px;
+    transition: transform .2s;
+}
+.socialmedia li i:hover{
+    transform: scale(1.5);
+}
+
+.r8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.r8 img{
+    padding: 5px;
+    width: 70%;
 }
 
 
 .servicelocator
 {
     display: flex;
-    border: 2px solid black;
-    padding: 20px;
-    justify-content: center;
     align-items: center;
-    /* margin: 20px 20px; */
+    justify-content: center;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);;
+    color: aliceblue;
+    background-color: rgb(20, 17, 17);
+    margin-top: 20px;
 }
 .getinfo{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red;  */
-    margin: 10px; 
-    padding: 20px;
+    margin: 15px; 
     font-size: 2.1rem; 
     height: 100%;
 }
 .getinfo input{
     height: 27px;
-    margin: 30px 16px;
+    margin: 30px 0px;
 }
 .getinfo a{
-    margin-left: 500px;;
+    color: white;
 }
 .servicemap img{
-    width: 800px;
+    width: 100%;
+    padding: 10px;
 }
+
 
 
 
 .row{
     display: flex;
+    position: relative;
     flex-direction: row;
-    border: 2px solid brown;
     margin: 20px 0px;
     justify-content: center;
     align-items: center;
-    background-image: url("https://wallpaperaccess.com/full/26227.jpg");
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;   
@@ -201,4 +247,19 @@ section h1{
     cursor: pointer;
     color: green;
     font-weight: bold;
+}
+.row::before{
+    background: url("https://wallpaperaccess.com/full/26227.jpg") no-repeat center center/cover;
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.main{
+    min-width: 100% !important;
 }

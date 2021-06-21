@@ -1,0 +1,41 @@
+*{
+    flex-wrap: wrap;
+}
+.servicelocator{
+    flex-direction: column-reverse;
+}
+.servicemap img{
+    padding: 20px;
+}
+.navigation{
+    height: 90px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.firstnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+}
+header{
+    flex-wrap: wrap;
+}
+
+
+.repair p{
+    font-size: 0.8rem;
+    overflow: auto;
+}
+
+.row{
+    flex-direction: column;
+}
+.main{
+    flex-wrap: wrap;
+}
