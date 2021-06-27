@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,166 +10,403 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="audi.css">
-    <link rel="stylesheet" media="screen and (max-width: 1220px" href="phone.css">
 </head>
 
 
 <body>
 
-
-
+    <!-- First three portion -->
     <header>
-            <div class="logo">
-                <img src="https://www.carstenwendt.com/app/uploads/2014/09/Audi-Logo-neu_high.jpg" alt="Audi Logo">
-                <ul class="firstnav">
-                    <li><a href="#">Sedans</a></li>
-                    <li><a href="#">SUVs</a></li>
-                    <li><a href="#">Sport Cars</a></li>
-                    <li><a href="#">Electric Cars</a></li>
-                    <li><a href="#">Premium Vechiles</a></li>
-                    <li><a href="#">Spare Parts</a></li>
-                    <li><a href="#">Used Cars</a></li>
-                </ul>
-            </div>
-        
+        <!-- 1st Navigation Bar -->
+        <div class="logo">
+            <img src="https://www.carstenwendt.com/app/uploads/2014/09/Audi-Logo-neu_high.jpg" alt="Audi Logo">
+            <ul class="firstnav">
+                <div class="upper1">
+                    <li><a href="#red">Sedans</a></li>
+                    <li><a href="#ass">SUVs</a></li>
+                </div>
 
-        <div class="firstpic">
-            <img src="https://www.motoroids.com/wp-content/uploads/2018/06/All-New-Audi-Q8-Fully-Revealed-4-1200x675.jpg" alt="">
+                <div class="lower1">
+                    <li><a href="#silver">Sport-Cars</a></li>
+                    <li><a href="#black">E-Cars</a></li>
+                </div>
+
+            </ul>
         </div>
 
+        <!-- MIDDLE PICS -->
+        <div class="yellow">
+            <img src="https://hdqwalls.com/wallpapers/2017-audi-r8-v10-do.jpg" alt="">
+        </div>
+
+
+        <!-- 2nd Navigation Bar -->
         <nav class="navbar">
             <ul class="navigation">
-                <li><a href="#"><i class="material-icons">time_to_leave</i>Navigate through the Models</a></li>
-                <li><a href="#"><i class="material-icons">task</i>Request a Testdrive</a></li>
-                <li><a href="#"><i class="material-icons">shopping_bag</i>Book your Audi now</a></li>
-                <li><a href="#"><i class="material-icons">car_repair</i>Services</a></li>
-                <li><a href="#"><i class="material-icons">login</i>Customer Log In</a></li>
+                <div class="upper2">
+                    <li><a href="#aboutus"><i class="material-icons">group</i>About Us</a></li>
+                    <li><a href="#seat"><i class="material-icons">airline_seat_recline_extra</i>Request a Testdrive</a>
+                    </li>
+                </div>
+                <div class="lower2">
+                    <li><a href="#location"><i class="material-icons">build</i>Service</a></li>
+                    <li><a href="#shop"><i class="material-icons">shopping_cart</i>Book Now</a></li>
+                    <li><a href="#account"><i class="material-icons">login</i>Login</a></li>
+                </div>
+
             </ul>
         </nav>
     </header>
 
 
-<main>
-    <div class="middle">
+
+    <!-- MIDDLE PORTION  -->
+
+    <!-- Models of 1st navbar  -->
+    <div class="sedan" id="red">
+        <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2019/10/Audi-A7.jpg?q=50&fit=crop&w=1920&dpr=1.5"
+            alt="">
+        <div class="description">
+            <h3>Audi Sedan</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus ea omnis soluta quasi suscipit
+                eum quas enim, nihil eius quis aspernatur, adipisci deleniti. Eligendi.</span>
+            <button id="readmore">Read More</button>
+        </div>
+    </div>
+
+    <div class="SUV" id="ass">
+        <div class="description">
+            <h3>Audi SUV</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus ea omnis soluta quasi suscipit
+                eum quas enim, nihil eius quis aspernatur, adipisci deleniti. Eligendi.</span>
+            <button id="readmore">Read More</button>
+        </div>
+        <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q5/my2021/1920x1080_Q5_2020_1218.jpg?imwidth=1920&imdensity=1"
+            alt="">
+    </div>
+
+    <div class="Sport-Cars" id="silver">
+        <img src="https://www.audiusa.com/content/dam/nemo/us/models/R8/R8-Coupe/1920x1080-dimensions/1920x1080_200902_r8-rwd_NAR_v01-min.jpg"
+            alt="">
+        <div class="description">
+            <h3>Audi Sport-Cars</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus ea omnis soluta quasi suscipit
+                eum quas enim, nihil eius quis aspernatur, adipisci deleniti. Eligendi.</span>
+            <button id="readmore">Read More</button>
+        </div>
+    </div>
+
+    <div class="electric-cars" id="black">
+        <div class="description">
+            <h3>Audi electric-cars</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus ea omnis soluta quasi suscipit
+                eum quas enim, nihil eius quis aspernatur, adipisci deleniti. Eligendi.</span>
+            <button id="readmore">Read More</button>
+        </div>
+        <img src="https://electrek.co/wp-content/uploads/sites/3/2018/11/Audi-e-tron-GT-concept.jpg?quality=82&strip=all"
+            alt="">
+    </div>
+
+
+    <!-- About us -->
+    <div class="middle" id="aboutus">
         <div class="repair" id="heading">
-            <h2>Get the premium class Customer Service across the Country</h2>
+            <h2>About Us</h2>
+            <br>
+            <p>Audi AG is a German automobile manufacturer that designs, engineers, produces, markets and distributes
+                luxury vehicles. Audi is a subsidiary of Volkswagen Group and has its roots at Ingolstadt, Bavaria,
+                Germany. Audi vehicles are produced in nine production facilities worldwide.</p>
         </div>
         <div class="repair" id="human">
-            <img src="https://www.audi.in/content/dam/nemo/in/customer-area/News/ASER_P_161043_previewImage.jpg?output-format=webp&downsize=880px:*" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo eum sit, ad deleniti possimus doloremque nam repellendus fugiat error aspernatur aperiam accusantium, laborum nostrum quod, voluptate corrupti quas reprehenderit labore asperiores suscipit. Dicta.</p>
+            <img src="https://www.audi.in/content/dam/nemo/in/customer-area/News/ASER_P_161043_previewImage.jpg?output-format=webp&downsize=880px:*"
+                alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo eum sit, ad deleniti possimus
+                doloremque nam repellendus fugiat error aspernatur aperiam accusantium, laborum nostrum quod, voluptate
+                corrupti quas reprehenderit labore asperiores suscipit. Dicta.</p>
         </div>
         <div class="repair">
-            <img src="https://www.audi.in/content/dam/nemo/in/customer-area/News/audi_bhopal.jpg?output-format=webp&downsize=880px:*" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat amet omnis nam sit, id iusto consequatur fuga eaque cupiditate numquam corrupti! Voluptas, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, placeat!</p>
+            <img src="https://www.audi.in/content/dam/nemo/in/customer-area/News/audi_bhopal.jpg?output-format=webp&downsize=880px:*"
+                alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat amet omnis nam sit, id iusto
+                consequatur fuga eaque cupiditate numquam corrupti! Voluptas, placeat. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam, placeat!</p>
         </div>
         <div class="repair">
             <img src="https://etimg.etb2bimg.com/photo/77589056.cms" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt distinctio ea tempore veniam reiciendis quibusdam iusto esse laudantium quia adipisci enim, odit quidem id omnis animi doloribus odio accusantium facere. Quae, mollitia ullam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt distinctio ea tempore veniam
+                reiciendis quibusdam iusto esse laudantium quia adipisci enim, odit quidem id omnis animi doloribus odio
+                accusantium facere. Quae, mollitia ullam?</p>
         </div>
     </div>
 
 
+    <!-- Testdrive -->
+    <div class="testdrive" id="seat">
+        <img src="https://i.ytimg.com/vi/znnPqHC9AOg/maxresdefault.jpg" alt="">
+
+        <div class="t2">
+            <h2>Book a testdrive now: <i class="material-icons" id="seat">airline_seat_recline_extra</i></h2>
+            <span class="entry">Enter Email:</span>
+            <input type="text" id="tdrive" name="city" placeholder="TYPE HERE...">
+            <span class="entry">Enter Phone Number:</span>
+            <input type="text" id="tdrive" name="city" placeholder="TYPE HERE...">
+            <button id="submitnow">Submit Now</button>
+        </div>
+    </div>
+
+    <!-- STICKY SOCIAL MEDIA NAVBAR  -->
     <div class="sticky">
         <ul class="socialmedia">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <div class="upper3">
+                <li><a href="https://www.facebook.com/audiindia/" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/audiin/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </div>
+            <div class="lower3">
+                <li><a href="https://twitter.com/AudiIN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/user/audiofindia" target="_blank"><i class="fa fa-youtube"></i></a>
+                </li>
+            </div>
         </ul>
     </div>
 
 
+    <!-- SERVICE CENTER LOCATION  -->
 
-    <div class="r8">
-        <img src="https://www.pixel4k.com/wp-content/uploads/2018/10/audi-r8-4k_1539104718.jpg" alt="">
-    </div>
-
-
-    <div class="servicelocator">
+    <div class="servicelocator" id="location">
         <div class="getinfo">
-            <span>Enter your City or Pincode to get the nearest dealership <i class="material-icons">location_city</i> :-</span>
-            <input type="text" name="" id="" placeholder="Type the name of your city or enter the pincode">
-            <a href=""><i class="material-icons">gps_fixed</i></a>
+            <h2>Find the nearest dealership<i id="factory" class="material-icons">location_city</i> :-</h2>
+            <span id="postcode">Enter City or Postcode</span>
+            <input type="text" id="city" name="city" placeholder="TYPE HERE">
+            <a href=""><i class="material-icons" id="searchservice">gps_fixed</i></a>
+        </div>
+    </div>
+
+
+    <!-- BOOK NOW -->
+
+    <div class="w3-content w3-display-container" id="shop">
+
+        <div class="w3-display-container mySlides">
+            <img src="slide3.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
         </div>
 
-        <div class="servicemap">
-            <img src="https://pictures.dealer.com/a/audirichfieldaoa/1123/e3b54352322c03ee1019c8cc144835e7x.jpg" alt="">
-        </div>  
+        <div class="w3-display-container mySlides">
+            <img src="slide1.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="slide2.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="slide4.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="slide5.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms2.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms3.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms4.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms5.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms6.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms7.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms8.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms9.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms10.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="ms11.jpeg" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                <a href="">BOOK NOW</a>
+            </div>
+        </div>
+
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+
+    <script>
+        var sindex = 1;
+        showDivs(sindex);
+
+        function plusDivs(p) {
+            showDivs(sindex += p);
+        }
+
+        function showDivs(p) {
+            var i;
+            var q = document.getElementsByClassName("mySlides");
+            if (p > q.length) { sindex = 1 }
+            if (p < 1) { sindex = q.length }
+            for (i = 0; i < q.length; i++) {
+                q[i].style.display = "none";
+            }
+            q[sindex - 1].style.display = "block";
+        }
+    </script>
+
+
+    <!-- CELBRITIES  -->
+    <div class="celebrities">
+        <div class="tablet">
+            <div class="sponsor">
+
+                <h2>Some Celebrity Owners</h2>
+
+            </div>
+        </div>
+
+        <div class="tablet">
+            <div class="virat">
+                <img src="virat.jpeg" alt="">
+                <h5>VIRAT KOHLI</h5>
+                <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nisi dolor. Aliquid distinctio
+                    excepturi nobis quaerat, vero at consequatur officiis."
+                </span>
+            </div>
+
+            <div class="cr7">
+                <img src="cr7.jpeg" alt="">
+                <h5>CRISTIANO RONALDO</h5>
+                <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nisi dolor. Aliquid distinctio
+                    excepturi nobis quaerat, vero at consequatur officiis".
+                </span>
+            </div>
+        </div>
+
+        <div class="tablet">
+            <div class="messi">
+                <img src="leo.jpeg" alt="">
+                <h5>LEO MESSI</h5>
+                <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nisi dolor. Aliquid distinctio
+                    excepturi nobis quaerat, vero at consequatur officiis." </span>
+            </div>
+        </div>
     </div>
 
 
+    <!-- Login area  -->
+
+    <div class="login" id="account">
+        <h2>Customer Login</h2>
+        <img id="brad" src="https://www.w3schools.com/howto/img_avatar2.png" alt="">
+
+        <input type="text" id="customer" name="customer" placeholder="Enter Audi Code">
+        <input type="text" id="customer" name="customer" placeholder="Enter password">
+        <button id="loginreset">Login</button>
+        <br>
 
 
+        <button id="loginreset" onclick="document.getElementById('id01').style.display='block'"
+            style="width:auto;">RESET PASSWORD</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="https://lawsisto.com/kkg_admin/images/categoryimages/1595402641otp_sms.jpg" alt="Avatar"
+                        class="avatar">
+                </div>
 
+                <div class="container">
+                    <label for="uname"><b>ENTER YOUR REGISTERED PHONE NUMBER</b></label>
+                    <input type="text" placeholder="Phone No." name="uname" required>
 
-    <div class="row">
-        <div class="column">
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-            </div>
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-            </div>
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-            </div>
+                    <label for="psw"><b>ENTER THE OTP</b></label>
+                    <input type="password" placeholder="Enter OTP" name="psw" required>
+
+                    <button id="loginreset" type="submit">Proceed</button>
+
+                </div>
+
+            </form>
         </div>
-        
-        <div class="column">
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-            </div>
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-            </div>
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-            </div>  
-        </div>
-        <div class="column">
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-            </div>
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-            </div>
-            <div class="car">
-                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/A6/6426/1571906388003/front-left-side-47.jpg?tr=w-300" alt="">
-                <h4>AUDI A6</h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa blanditiis in quasi reiciendis rerum a officia minima, enim cupiditate?</span>
-                <span><button>BOOK NOW</button></span>
-           </div>   
-        </div>
+
+        <script>
+            var modal = document.getElementById('id01');
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </div>
-</main>
-
-
-
 
 </body>
+
 </html>

@@ -9,12 +9,7 @@ body{
     box-sizing: border-box
 }
 
-
-header{
-    display: flex;
-    flex-direction: column;
-}
-
+/* 1st .navigation bar */
 .logo{
     display: flex;
     overflow: auto;
@@ -27,35 +22,72 @@ header{
 .logo img{
     width: 18%;
 }
+.upper1{
+    display: flex;
+
+}
+.lower1{
+    display: flex;
+}
 .firstnav{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 .firstnav li{
     list-style: none;
+    
 }
 .firstnav li a{
+    text-align: center;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 0px 12px;
     color: black;
+    
 }
 .firstnav li a:hover{
     text-decoration: underline;
 }
 
-.navigation{
-    margin-top: 20px;
-    display:flex;
-    height: 50px;
+/* Image Slideshow */
+.mySlides {
+    display:none;
+}
+
+/* yellow car  */
+.yellow{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin: 20px;
+}
+.yellow img{
+    width: 100%;
+}
+
+
+.slideshow{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: auto;
+    margin: 20px;
+}
+
+/* 2nd Navigation Bar */
+.navigation{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0,0,0,0.8);
+    margin: 20px 0;
 }
 .navigation li{
     list-style: none;
+    margin: 15px;
+    
 }
 .navigation:hover{
     font-weight: bold;
@@ -65,43 +97,102 @@ header{
 .navigation li a{
     color: aliceblue;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.6rem;
 }
 .navigation li a:hover{
     font-weight: bold;
     text-decoration: underline;
 }
-.firstpic{
+.upper2{
+    display: flex;
+
+}
+.lower2{
+    display: flex;
+}
+
+/* MIDDLE PORTION */
+
+/* Models of 1st navbar */
+.sedan{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px;
 }
-.firstpic img{
-    padding: 5px;
+.sedan img{
+    width:45%;
 }
-header::before{
-    background: url("https://wallpaperaccess.com/full/13662.jpg") no-repeat center center/cover;
-    content: "";
-    position:absolute;
-    width: 100%;
-    
-    right:0;
-    top:50%;
-    z-index: -1;
+
+.SUV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.SUV img{
+    width:45%;
+}
+
+.Sport-Cars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.Sport-Cars img{
+    width:45%;
+}
+
+
+.electric-cars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.electric-cars img{
+    width:45%;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.description h3, span{
+    margin: 5px;
+}
+
+#readmore{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+}
+#readmore:hover{
     opacity: 0.8;
 }
 
-
+/* About Us portion */
 .middle{
     display: flex;
-    margin: 20px 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color:white;
     position: relative;
-    width:100%;
+    margin: 20px 0;
 }
 .repair{
     margin: 10px ;
@@ -112,13 +203,14 @@ header::before{
     text-align: center;
     }
 .repair img{
-    width: 40%;
+    width: 50%;
     padding: 7px;
     margin: 20px;
 }
 #heading h2{
-    font-size: 2.0rem;
-    font-weight: 400;
+    font-size: 2.3rem;
+    font-weight: 100;
+    text-decoration: underline;
 }
 .repair p{
     font-size: 1.4rem;
@@ -137,11 +229,62 @@ header::before{
     opacity: 0.9;
 }
 
+/* Testdrive Portion */
+.testdrive{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 20px;
+    font-size: 1.6rem;
+}
+.testdrive img{
+    width: 45%;
+}
 
+.t2{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.8rem;
+}
+#tdrive{
+    border:1px solid white;
+    border-bottom: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+#seat{
+    font-size: 1.9rem;
+}
+#submitnow{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    font-size: 1.2rem;
+}
+#submitnow:hover{
+    opacity: 0.8;
+}
+.entry{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/* Social Media Sticky Navbar */
 .sticky{
     position: sticky;
     top:0;
     z-index: 99;
+    margin: 20px 0;
 }
 .socialmedia{
     display: flex;
@@ -161,95 +304,154 @@ header::before{
 .socialmedia li i:hover{
     transform: scale(1.5);
 }
-
-.r8{
+.upper3{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+
 }
-.r8 img{
-    padding: 5px;
-    width: 70%;
+.lower3{
+    display: flex;
 }
 
 
+/* SERVICE CENTER LOCATOR */
 .servicelocator
 {
+    margin: 20px 0;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: auto;
-    color: aliceblue;
-    background-color: rgb(20, 17, 17);
-    margin-top: 20px;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row-reverse;
 }
+
 .getinfo{
     display: flex;
     flex-direction: column;
-    margin: 15px; 
+    align-items: center;
+    justify-content: center; 
     font-size: 2.1rem; 
     height: 100%;
-}
-.getinfo input{
-    height: 27px;
-    margin: 30px 0px;
-}
-.getinfo a{
-    color: white;
-}
-.servicemap img{
-    width: 100%;
+    color: black;
     padding: 10px;
 }
 
+#city{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(0,0,0,0.2);
+    border-bottom: 2px solid white;
+    color: rgb(46, 45, 45);
+    width: 100%;
+    margin-top: 55px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+.getinfo a{
+    margin: 20px;
+    color:rgb(116, 65, 4);
+}
+#searchservice{
+    font-size: 2.9rem;
+}
+#postcode{
+    font-size: 1.5rem;
+    margin-top: 55px;
+}
 
+.servicelocator::before{
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/19b6e159588509.5a27daa008828.jpg") no-repeat center center/cover;
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
 
-
-.row{
+/* Legend Section  */
+.celebrities{
+    margin: 20px 0;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    flex-direction: row;
-    margin: 20px 0px;
-    justify-content: center;
-    align-items: center;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;   
-}
-
-.column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin:10px;
-}
-.car{
-    display:flex;
-    flex-direction: column;
-    border: 2px solid rgb(180, 180, 180);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: aliceblue;
-    margin:10px;
-    background-color: rgba(0,0,0,0.4);
+
 }
-.car img{
-    width: 200px;
+.celebrities img{
     margin: 5px;
 }
-.car button{
+.celebrities h5{
+    margin: 5px;
+}
+.celebrities span{
+    margin: 5px;
+}
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
     margin: 10px;
 }
-.car button:hover{
-    cursor: pointer;
-    color: green;
-    font-weight: bold;
+.sponsor img{
+    width: 20%;
 }
-.row::before{
-    background: url("https://wallpaperaccess.com/full/26227.jpg") no-repeat center center/cover;
+.virat{
+    border: 2px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+.virat img{
+    width: 20%;
+    border-radius: 50%;
+}
+.cr7{
+    border: 2px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+.cr7 img{
+    margin: 4px;
+    width: 20%;
+    border-radius: 50%;
+}
+.messi{
+    border: 2px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+.messi img{
+    width: 20%;
+    border-radius: 50%;
+}
+.tablet{
+    display: flex;
+}
+.celebrities::before{
+    background: url("https://www.audi.com/content/dam/gbp2/experience-audi/inspiration-and-lifestyle/sports/hof/1920x1080-desktop-audi-home-of-football.jpg?imwidth=1920&imdensity=1") no-repeat center center/cover;
     content: "";
     position:absolute;
     top:0;
@@ -260,6 +462,409 @@ header::before{
     opacity: 0.8;
 }
 
-.main{
-    min-width: 100% !important;
+/* LOGIN AREA  */
+
+.login{
+    margin: 20px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+.login img{
+    margin: 12px;
+    width: 10%;
+}
+#brad{
+    border-radius: 50%;
+}
+#customer{
+    margin: 10px;
+    width: 50%;
+}
+#remember me{
+    margin: 10px;
+}
+#loginreset{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    text-align: center;
+}
+#loginreset:hover{
+    opacity: 0.8;
+}
+.login::before{
+    background: url("https://www.hdcarwallpapers.com/walls/audi_r8_v10_plus_4k-HD.jpg") no-repeat center center/cover;
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* OTP AREA  */
+
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.imgcontainer{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+  
+img.avatar{
+    width: 30%;
+}
+  
+.container{
+    padding: 16px;
+}
+  
+span.psw{
+    float: right;
+    padding-top: 16px;
+}
+  
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+  
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+
+.close{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+  
+  .close:hover, .close:focus{
+    color: red;
+    cursor: pointer;
+}
+
+.animate
+{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom
+{
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom
+{
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+  
+@media screen and (max-width: 300px)
+{
+    span.psw
+    {
+       display: block;
+       float: none;
+    }
+    
+}
+
+
+
+/* 1st Responsive Criteria */
+
+@media (min-width:481px) and (max-width:1220px)
+{
+        /* 1st navbar */
+        .logo{
+            display: block;
+            text-align: center;
+        }
+        .logo img{
+            width:35%;
+        }
+        .firstnav{
+            padding: 5px 0px;
+        }
+
+        .firstnav li a{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /* 2nd Navbar */
+
+        .upper2{
+            display: block;
+        }
+        .lower2{
+            display: block;
+        }
+        .navigation li a{
+            font-size: 1.2rem;
+        }
+        .material-icons{
+            font-size: 0.9rem;
+        }
+
+        /* Middle Portion */
+
+        /* MODELS OF 1ST NAVBAR */
+        .sedan{
+            flex-direction: column;
+        }
+        .sedan img{
+            width: 70%;
+        }
+        .SUV{
+            flex-direction: column-reverse;
+        }
+        .SUV img{
+            width: 70%;
+        }
+        .Sport-Cars{
+            flex-direction: column;
+        }
+        .Sport-Cars img{
+            width: 70%;
+        }
+        .electric-cars{
+            flex-direction: column-reverse;
+        }
+        .electric-cars img{
+            width: 70%;
+        }
+
+        /* ABOUT US PORTION */
+
+        .repair p{
+            font-size: 1.2rem;
+        }
+        .repair img{
+            width: 50%;
+        }
+
+        /* TESTDRIVE PORTION */
+        .testdrive{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .testdrive img{
+            width: 80%;
+        }
+        .t2{
+            font-size: 0.6rem;
+        }
+        .entry{
+            font-size: 1.4rem;
+        }
+
+        /* Service Locator */
+        .servicelocator{
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px;
+        }
+        .getinfo{
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+            width: 100%;
+            font-size: 0.6rem;
+        }
+        #factory{
+            font-size: 1.8rem;
+        }
+        #searchservice{
+            font-size: 2.9rem;
+        }
+
+        /* Social Media Sticky Navbar */
+        .upper3{
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .lower3{
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+}
+
+
+
+/* 2nd Responsive Criteria */
+
+@media (max-width:480px)
+{
+    /* 1st navbar */
+    .logo{
+        display: block;
+        text-align: center;
+    }
+    .logo img{
+        width: 50%;
+    }
+        
+    .firstnav{
+        padding: 5px 0px;
+    }
+
+    .firstnav li a{
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    /* 2nd Navbar */
+    .upper2{
+        display: block;
+    }
+    .lower2{
+        display: block;
+    }
+    .navigation li a{
+        font-size: 0.6rem;
+    }
+    .material-icons{
+        font-size: 1.5rem;
+    }
+
+    /* Middle section */
+
+    /* CARS OF 1ST NAVBAR  */
+    .sedan{
+        flex-direction: column;
+    }
+    .sedan img{
+        width: 50%;
+    }
+    .SUV{
+        flex-direction: column-reverse;
+    }
+    .SUV img{
+        width: 50%;
+    }
+    .Sport-Cars{
+        flex-direction: column;
+    }
+    .Sport-Cars img{
+        width: 50%;
+    }
+    .electric-cars{
+        flex-direction: column-reverse;
+    }
+    .electric-cars img{
+        width: 50%;
+    }
+    .description{
+        font-size: 1.1rem;
+    }
+    #readmore{
+        font-size: 0.6rem;
+    }
+
+    /* ABOUT US PORTION */
+    .repair img{
+        width: 70%;
+    }
+    .repair p{
+        font-size: 0.8rem;
+    }
+
+    /* TESTDRIVE PORTION */
+    .testdrive{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .testdrive img{
+        width: 80%;
+    }
+    .t2{
+        font-size: 0.6rem;
+    }
+    .entry{
+        font-size: 0.8rem;
+    }
+    #tdrive{
+        font-size: 0.6rem;
+    }
+    #submitnow{
+        font-size: 0.6rem;
+    }
+
+    /* Sticky Social Media Navbar */
+    .socialmedia li a i{
+        font-size: 1.4rem;
+    }
+    .upper3{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .lower3{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* SERVICE LOCATOR AREA  */
+    .servicelocator{
+        flex-direction: column;
+    }
+
+    .getinfo{
+        font-size: 0.4rem;
+        align-items: flex-start;
+        justify-self: start;
+    }
+    #city{
+        font-size: 0.6rem;
+    }
+
+    /* CELEBRITY PORTION */
+    .celebrities{
+        font-size: 0.4rem;
+    }
+    .celebrities img{
+        width: 15%
+    }
+    .tablet{
+        display: flex;
+        flex-direction: column;
+    }
 }
